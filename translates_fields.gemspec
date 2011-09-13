@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version      = TranslatesFields::VERSION
   s.authors      = ["Christopher Dell"]
   s.email        = "chris@tigrish.com"
-  s.homepage     = "https://github.com//translates_fields"
+  s.homepage     = "https://github.com/Locale/translates_fields"
   s.summary      = "[summary]"
   s.description  = "[description]"
 
@@ -16,4 +16,7 @@ Gem::Specification.new do |s|
   s.platform     = Gem::Platform::RUBY
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
+
+  s.add_development_dependency "gem-release"
+  s.add_development_dependency 'rspec', '2.5.0'
 end
