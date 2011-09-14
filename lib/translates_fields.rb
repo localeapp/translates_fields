@@ -1,0 +1,1 @@
+require 'translates_fields/active_record'
