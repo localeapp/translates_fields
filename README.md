@@ -2,7 +2,7 @@
 
 [![Build status](https://secure.travis-ci.org/Locale/translates_fields.png)](http://travis-ci.org/Locale/translates_fields)
 
-Provides a way of storing and retreiving tranlsation keys and options in the database
+Provides a way of storing and retreiving tranlsation keys and options in your ActiveRecord models.
 
 ## Installation
 
