@@ -22,7 +22,7 @@ module TranslatesFields
         return '' unless read_attribute(field).is_a?(Array)
         scope   = read_attribute(field).first
         options = read_attribute(field).last
-        key     = "app.models.#{self.class.to_s.underscore}.attributes.#{field}.#{scope}".to_sym
+        key     = "models.#{self.class.to_s.underscore}.attributes.#{field}.#{scope}".to_sym
         I18n.translate(key, options)
       end
 

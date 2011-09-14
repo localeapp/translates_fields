@@ -29,7 +29,7 @@ end
 
 describe TranslatesFields, 'fields' do
   it "returns a translated string based on the current scope" do
-    I18n.should_receive(:translate).with(:'app.models.my_model.attributes.body.key', {:foo => 'bar'})
+    I18n.should_receive(:translate).with(:'models.my_model.attributes.body.key', {:foo => 'bar'})
     MyModel.new(:body => [:key, {:foo => 'bar'}]).body
   end
 
