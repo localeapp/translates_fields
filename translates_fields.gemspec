@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
 
+  s.add_development_dependency 'rake'
   s.add_development_dependency "gem-release"
   s.add_development_dependency 'rspec', '2.5.0'
   s.add_development_dependency 'activerecord', '3.0.10'
