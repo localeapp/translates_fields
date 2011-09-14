@@ -19,6 +19,7 @@ module TranslatesFields
       end
 
       send :define_method, field do
+        return '' unless read_attribute(field).is_a?(Array)
         scope   = read_attribute(field).first
         options = read_attribute(field).last
         key     = "app.models.#{self.class.to_s.underscore}.attributes.#{field}.#{scope}".to_sym

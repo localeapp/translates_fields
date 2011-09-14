@@ -32,4 +32,8 @@ describe TranslatesFields, 'fields' do
     I18n.should_receive(:translate).with(:'app.models.my_model.attributes.body.key', {:foo => 'bar'})
     MyModel.new(:body => [:key, {:foo => 'bar'}]).body
   end
+
+  it "returns an empty string when the field is empty" do
+    MyModel.new.body.should == ''
+  end
 end
